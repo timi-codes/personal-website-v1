@@ -19,7 +19,8 @@ export default function Home() {
         <title>Timi Tejumola</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <div className="mailme"><p>Get in Touch <span>👉 </span><a href="mailto:tejumoladavid@gmail.com"> HERE</a></p></div>
+    <main>
         <div className="section-one">
           <h1 onMouseEnter={handleToggleHover} onMouseLeave={handleToggleHover} className="hello">Hello! <span className="emoji wave-hand">&nbsp;</span></h1>
           <p className="description">
@@ -40,11 +41,11 @@ export default function Home() {
               <li><a href="https://www.github.com/timi-codes"><img src="/images/github.svg"/></a></li>
               <li><a href="https://www.linkedin.com/timitejumola"><img src="/images/linkedin.svg" /></a></li>
               <li><a href="https://www.twitter.com/timicodes"><img src="/images/twitter.svg" /></a></li>
-              <li><a href="mailto:tejumoladavid@gmail.com"><img src="./images/mail.svg"/></a></li>
+              <li><a href="mailto:tejumoladavid@gmail.com"><img src="/images/medium.svg"/></a></li>
             </ul>
           </div>
           <div className="avatar">
-            <img src="/images/avatar.png" alt="Timi Avatar"/>
+            <img src="/images/avatarr.png" alt="Timi Avatar"/>
           </div>
         </div>
       </main>
@@ -56,12 +57,37 @@ export default function Home() {
           justify-content: center;
           align-items: center;
           margin-bottom: -8rem;
-          border: 15px solid #FE5570;
         }
         main {
           display: flex;
           flex-direction: column;
+          justify-content: flex-start;
           width: 100%;
+        }
+        .mailme {
+            position: fixed;
+            top: 0;
+            background-color: #E25252;
+            width: 100%;
+            text-align:  center;
+            color: white;
+            font-weight: 14px;
+        }
+
+        .mailme p {
+            opacity: 0.8;
+            margin: 13px 0;
+        }
+
+        .mailme span{
+            margin: 0 0.5rem
+        }
+
+        .mailme a {
+            color: white;
+            font-weight: 400
+            box-shadow: 1px 0 0 0 black;
+            opacity: 100%;
         }
         .emoji {
           width: 40px;
@@ -168,7 +194,7 @@ export default function Home() {
         .description {
           font-size: 2rem;
           margin: 0;
-          margin-top: 4.3rem;
+          margin-top: 4.5rem;
         }
         .description span {
           font-weight: 800;
@@ -200,10 +226,11 @@ export default function Home() {
         }
         .avatar {
           justify-self: end;
-          margin-top: 4rem
+          margin-top: 4rem;
+          margin-bottom: -5rem;
         }
         .avatar img {
-          width: 8.6rem;
+          width: 19rem;
         }
         footer h1 {
           font-size: 13rem;
@@ -213,6 +240,7 @@ export default function Home() {
         }
 
         @media only screen and (max-width: 600px) {
+
           .section-one {
             padding: 0 1.1rem;
           }
@@ -226,15 +254,16 @@ export default function Home() {
             margin-top: 4rem;
           }
           .description {
-            font-size: 1.4rem;
+            font-size: 1.1rem;
             line-height: 150%
             margin-top: 1.8rem;
+            text-align: center;
           }
           .avatar {
             margin-top: 0rem;
           }
           .avatar img {
-            width: 6.8rem;
+            width: 7.5rem;
             margin-right: 2rem
             margin-top: 2rem
           }
