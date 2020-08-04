@@ -39,9 +39,9 @@ export default function Home() {
             >RESUME</a>
             <ul>
               <li><a href="https://www.github.com/timi-codes"><img src="/images/github.svg"/></a></li>
-              <li><a href="https://www.linkedin.com/timitejumola"><img src="/images/linkedin.svg" /></a></li>
+              <li><a href="https://www.linkedin.com/in/timi-tejumola/"><img src="/images/linkedin.svg" /></a></li>
               <li><a href="https://www.twitter.com/timicodes"><img src="/images/twitter.svg" /></a></li>
-              <li><a href="mailto:tejumoladavid@gmail.com"><img src="/images/medium.svg"/></a></li>
+              <li><a href="https://medium.com/@tejumoladavid_91868"><img src="/images/medium.svg"/></a></li>
             </ul>
           </div>
           <div className="avatar">
