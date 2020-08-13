@@ -19,7 +19,7 @@ export default function Home() {
         <title>Timi Tejumola</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="mailme"><p>Get in Touch <span>👉 </span><a href="mailto:tejumoladavid@gmail.com"> HERE</a></p></div>
+      <div className="mailme"><p>Get in Touch <span>👉 </span><a href="mailto:tejumoladavid@gmail.com" target="_blank"> HERE</a></p></div>
     <main>
         <div className="section-one">
           <h1 onMouseEnter={handleToggleHover} onMouseLeave={handleToggleHover} className="hello">Hello! <span className="emoji wave-hand">&nbsp;</span></h1>
@@ -38,10 +38,10 @@ export default function Home() {
               rel="noopener noreferrer"
             >RESUME</a>
             <ul>
-              <li><a href="https://www.github.com/timi-codes"><img src="/images/github.svg"/></a></li>
-              <li><a href="https://www.linkedin.com/in/timi-tejumola/"><img src="/images/linkedin.svg" /></a></li>
-              <li><a href="https://www.twitter.com/timicodes"><img src="/images/twitter.svg" /></a></li>
-              <li><a href="https://medium.com/@tejumoladavid_91868"><img src="/images/medium.svg"/></a></li>
+              <li><a href="https://www.github.com/timi-codes" target="_blank"><img src="/images/github.svg"/></a></li>
+              <li><a href="https://www.linkedin.com/in/timi-tejumola/" target="_blank"><img src="/images/linkedin.svg" /></a></li>
+              <li><a href="https://www.twitter.com/timicodes" target="_blank"><img src="/images/twitter.svg" /></a></li>
+              <li><a href="https://medium.com/@tejumoladavid_91868" target="_blank"><img src="/images/medium.svg"/></a></li>
             </ul>
           </div>
           <div className="avatar">
