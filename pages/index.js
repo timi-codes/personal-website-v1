@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import Head from 'next/head'
-import Avatar from '../components/Avatar';
 
 export default function Home() {
   const [isHover, setHover] = useState(false)
@@ -17,6 +16,21 @@ export default function Home() {
     <div className="container">
       <Head>
         <title>Timi Tejumola</title>
+        <meta name="twitter:card" content="summary" key="twcard" />
+        <meta name="twitter:creator" content="timicodes" key="twhandle" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="utf-8" />
+        <meta name="description" content="I'm Timi Tejumola, a design-minded software engineer
+          focused on building beautiful interfaces & experiences across
+          mobile & web platforms. 🚀"/>
+        <meta property="og:url" content="https://www.timitej.dev" key="ogurl" />
+        <meta property="og:image" content="/profile-avatar.png" key="ogimage" />
+        <meta property="og:site_name" content="Timi Tejumola" key="ogsitename" />
+        <meta property="og:title" content="Timi Tejumola" key="ogtitle" />
+        <meta property="og:description" content="
+          I'm Timi Tejumola, a design-minded software engineer
+          focused on building beautiful interfaces & experiences across
+          mobile & web platforms. 🚀" key="ogdesc" />
         <link rel="icon" href="/favicon.ico" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175462548-1"></script>
         <script
@@ -60,7 +74,7 @@ export default function Home() {
             </ul>
           </div>
           <div className="avatar">
-            <img src="/images/avatarr.png" alt="Timi Avatar"/>
+            <img src="/images/avatarr.png" alt="Timi Tejumola"/>
           </div>
         </div>
       </main>
