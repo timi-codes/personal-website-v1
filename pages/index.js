@@ -24,7 +24,7 @@ export default function Home() {
           focused on building beautiful interfaces & experiences across
           mobile & web platforms. 🚀"/>
         <meta property="og:url" content="https://www.timitej.dev" key="ogurl" />
-        <meta property="og:image" content="/profile-avatar.png" key="ogimage" />
+        <meta property="og:image" content="/images/profile-avatar.png" key="ogimage" />
         <meta property="og:site_name" content="Timi Tejumola" key="ogsitename" />
         <meta property="og:title" content="Timi Tejumola" key="ogtitle" />
         <meta property="og:description" content="
