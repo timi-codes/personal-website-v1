@@ -18,6 +18,20 @@ export default function Home() {
       <Head>
         <title>Timi Tejumola</title>
         <link rel="icon" href="/favicon.ico" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `<!-- Global site tag (gtag.js) - Google Analytics -->
+                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175462548-1"></script>
+                <script>
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+
+                  gtag('config', 'UA-175462548-1');
+                </script>
+              `,
+          }}
+        />
       </Head>
       <div className="mailme"><p>Get in Touch <span>👉 </span><a href="mailto:tejumoladavid@gmail.com" target="_blank"> HERE</a></p></div>
     <main>
@@ -194,7 +208,7 @@ export default function Home() {
         .description {
           font-size: 2rem;
           margin: 0;
-          margin-top: 4.5rem;
+          margin-top: 6rem;
         }
         .description span {
           font-weight: 800;
