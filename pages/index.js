@@ -18,18 +18,19 @@ export default function Home() {
       <Head>
         <title>Timi Tejumola</title>
         <link rel="icon" href="/favicon.ico" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175462548-1"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `<!-- Global site tag (gtag.js) - Google Analytics -->
-                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175462548-1"></script>
-                <script>
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
+              <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175462548-1"></script>
+              <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
 
-                  gtag('config', 'UA-175462548-1');
-                </script>
-              `,
+                gtag('config', 'UA-175462548-1');
+              </script>
+            `,
           }}
         />
       </Head>
