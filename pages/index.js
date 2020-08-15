@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import Head from 'next/head'
+import Head from 'next/head';
+import Link from 'next/link';
 
 export default function Home() {
   const [isHover, setHover] = useState(false)
@@ -30,51 +31,48 @@ export default function Home() {
         <meta property="og:description" content="
           I'm Timi Tejumola, a design-minded software engineer
           focused on building beautiful interfaces & experiences across
-          mobile & web platforms. 🚀" key="ogdesc" />
+          mobile & web platforms.🚀" key="ogdesc" />
         <link rel="icon" href="/favicon.ico" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175462548-1"></script>
         <script
           dangerouslySetInnerHTML={{
-            __html: `<!-- Global site tag (gtag.js) - Google Analytics -->
-              <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175462548-1"></script>
-              <script>
+            __html: `
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
 
                 gtag('config', 'UA-175462548-1');
-              </script>
-            `,
+            `
           }}
-        />
+        ></script>
       </Head>
-      <div className="mailme"><p>Get in Touch <span>👉 </span><a href="mailto:tejumoladavid@gmail.com" target="_blank"> HERE</a></p></div>
+      <div className="mailme"><p>Get in Touch <span role="img" aria-describedby="my-email-address">👉 </span><Link href="mailto:tejumoladavid@gmail.com" target="_blank" rel="noopener noreferrer"><a>HERE</a></Link></p></div>
     <main>
         <div className="section-one">
-          <h1 onMouseEnter={handleToggleHover} onMouseLeave={handleToggleHover} className="hello">Hello! <span className="emoji wave-hand">&nbsp;</span></h1>
+          <h1 onMouseEnter={handleToggleHover} onMouseLeave={handleToggleHover} className="hello">Hello! <span className="emoji wave-hand" role="img" aria-describedby="wave-emoji">&nbsp;</span></h1>
           <p className="description">
-            I'm <span>Timi Tejumola</span>, a design-minded software engineer<br/> focused on building beautiful interfaces & experiences across<br/> mobile & web platforms. 🚀
+            I'm <span role="img" aria-describedby="my-name">Timi Tejumola</span>, a design-minded software engineer<br/> focused on building beautiful interfaces & experiences across<br/> mobile & web platforms. 🚀
           </p>
         </div>
         <hr/>
         <div className="section-two">
           <div className="empty-div"/>
           <div className="links">
-            <a
+            <Link
               href="https://docs.google.com/document/d/1B3m6d2JoUdv5Zb-TwwVKVTotKpSLIXKIAWtu9iyO7lA/edit"
               className="resume-link"
               target="_blank"
               rel="noopener noreferrer"
-            >RESUME</a>
+            ><a>RESUME</a></Link>
             <ul>
-              <li><a href="https://www.github.com/timi-codes" target="_blank"><img src="/images/github.svg"/></a></li>
-              <li><a href="https://www.linkedin.com/in/timi-tejumola/" target="_blank"><img src="/images/linkedin.svg" /></a></li>
-              <li><a href="https://www.twitter.com/timicodes" target="_blank"><img src="/images/twitter.svg" /></a></li>
-              <li><a href="https://medium.com/@tejumoladavid_91868" target="_blank"><img src="/images/medium.svg"/></a></li>
+              <li><Link href="https://www.github.com/timi-codes" target="_blank" rel="noopener noreferrer"><a><img src="/images/github.svg" alt="Link to my Github Profile"/></a></Link></li>
+              <li><Link href="https://www.linkedin.com/in/timi-tejumola" target="_blank" rel="noopener noreferrer"><a><img src="/images/linkedin.svg" alt="Link to my LinkedIn Profile"/></a></Link></li>
+              <li><Link href="https://www.twitter.com/timicodes" target="_blank" rel="noopener noreferrer"><a><img src="/images/twitter.svg" alt="Link to my Twitter Profile" /></a></Link></li>
+              <li><Link href="https://medium.com/@tejumoladavid_91868" target="_blank" rel="noopener noreferrer"><a><img src="/images/medium.svg" alt="Link to my Medium Profile"/></a></Link></li>
             </ul>
           </div>
           <div className="avatar">
-            <img src="/images/avatarr.png" alt="Timi Tejumola"/>
+            <img src="/images/avatarr.webp" alt="Timi Tejumola"/>
           </div>
         </div>
       </main>
@@ -320,7 +318,7 @@ export default function Home() {
           padding: 0;
           margin: 0;
           font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, "Helvetica Neue",
             sans-serif;
           background-image: url('/images/dots.svg'), url('/images/tt-text.svg');
           background-repeat: no-repeat;
