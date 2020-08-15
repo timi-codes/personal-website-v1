@@ -17,40 +17,12 @@ export default function Home() {
     <div className="container">
       <Head>
         <title>Timi Tejumola</title>
-        <meta name="twitter:card" content="summary" key="twcard" />
-        <meta name="twitter:creator" content="timicodes" key="twhandle" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charSet="utf-8" />
-        <meta name="description" content="I'm Timi Tejumola, a design-minded software engineer
-          focused on building beautiful interfaces & experiences across
-          mobile & web platforms. 🚀"/>
-        <meta property="og:url" content="https://www.timitej.dev" key="ogurl" />
-        <meta property="og:image" content="/images/profile-avatar.png" key="ogimage" />
-        <meta property="og:site_name" content="Timi Tejumola" key="ogsitename" />
-        <meta property="og:title" content="Timi Tejumola" key="ogtitle" />
-        <meta property="og:description" content="
-          I'm Timi Tejumola, a design-minded software engineer
-          focused on building beautiful interfaces & experiences across
-          mobile & web platforms.🚀" key="ogdesc" />
-        <link rel="icon" href="/favicon.ico" />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175462548-1"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-
-                gtag('config', 'UA-175462548-1');
-            `
-          }}
-        ></script>
       </Head>
       <div className="mailme"><p>Get in Touch <span role="img" aria-describedby="my-email-address">👉 </span><Link href="mailto:tejumoladavid@gmail.com" target="_blank" rel="noopener noreferrer"><a>HERE</a></Link></p></div>
     <main>
         <div className="section-one">
           <h1 onMouseEnter={handleToggleHover} onMouseLeave={handleToggleHover} className="hello">Hello! <span className="emoji wave-hand" role="img" aria-describedby="wave-emoji">&nbsp;</span></h1>
-          <p className="description">
+          <p className="description" >
             I'm <span role="img" aria-describedby="my-name">Timi Tejumola</span>, a design-minded software engineer<br/> focused on building beautiful interfaces & experiences across<br/> mobile & web platforms. 🚀
           </p>
         </div>
@@ -60,10 +32,10 @@ export default function Home() {
           <div className="links">
             <Link
               href="https://docs.google.com/document/d/1B3m6d2JoUdv5Zb-TwwVKVTotKpSLIXKIAWtu9iyO7lA/edit"
+            ><a
               className="resume-link"
               target="_blank"
-              rel="noopener noreferrer"
-            ><a>RESUME</a></Link>
+              rel="noopener noreferrer">RESUME</a></Link>
             <ul>
               <li><Link href="https://www.github.com/timi-codes" target="_blank" rel="noopener noreferrer"><a><img src="/images/github.svg" alt="Link to my Github Profile"/></a></Link></li>
               <li><Link href="https://www.linkedin.com/in/timi-tejumola" target="_blank" rel="noopener noreferrer"><a><img src="/images/linkedin.svg" alt="Link to my LinkedIn Profile"/></a></Link></li>
@@ -217,6 +189,7 @@ export default function Home() {
           text-align: center;
           margin: 0;
           font-weight: 300;
+          line-height: 3rem;
         }
         .description {
           font-size: 2rem;
